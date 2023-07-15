@@ -1,11 +1,11 @@
 import categories from "./fake-data/all-categories";
 import { useState } from "react";
-const CategoriesList = (props) => {
-  const [active, setActive] = useState(false);
 
+const CategoriesList = ({ setSelectedCategory }) => {
+  const [active, setActive] = useState(false);
   function onSelect(categorie) {
     const value = categorie.replace("FAKE: ", "");
-    props.setSelectedCategory(value);
+    setSelectedCategory(value);
     setActive(!active);
   }
   return (
@@ -26,5 +26,4 @@ const CategoriesList = (props) => {
     </div>
   );
 };
-
 export default CategoriesList;

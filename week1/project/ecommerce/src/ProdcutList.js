@@ -1,7 +1,8 @@
 import prodcuts from "./fake-data/all-products";
-const ProdcutList = (props) => {
+
+const ProdcutList = ({ category }) => {
   const selectedItems = prodcuts.filter(
-    (prodcut) => prodcut.category === props.category
+    (prodcut) => prodcut.category === category
   );
   const items = selectedItems.length !== 0 ? selectedItems : prodcuts;
   return (
