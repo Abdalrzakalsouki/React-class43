@@ -72,6 +72,7 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  cursor: pointer;
 }
 
 .product-image {
@@ -82,9 +83,44 @@ h1 {
   width: 100%;
 }
 
+.fav-image {
+  display: block;
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+
 .product-title {
   overflow: hidden;
   padding-top: 8px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+.prodcut-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodcut-details-image {
+  max-height: 500px;
+}
+
+.prodcut-details-description {
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  font-size: 20px;
 }
